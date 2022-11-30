@@ -74,16 +74,14 @@ const words = {
   ],
   FootballTeam: [
     "Barcelona",
-    "Real Madrid",
+    
     "Liverpool",
     "Milan",
-    "Manchester United",
-    "Bayern Munich",
-    "Everton",
-    "Atletico Madrid",
+      "Everton",
+    
     "Ajax",
     "Napoli",
-    "Inter Milan",
+
     "Sevillia",
     "Arsenal",
   ],
