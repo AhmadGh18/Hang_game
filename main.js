@@ -2,7 +2,13 @@ let lettercont = document.querySelector(".letters");
 let letters = "abcdefghijklmnopqrstuvwxyz";
 
 let lett = Array.from(letters);
-
+let sorry = document.querySelector(".sorry");
+pressrox.onclick = () => {
+  pressrox.parentElement.remove();
+};
+setTimeout(() => {
+  sorry.style.display = "block";
+}, 10000);
 lett.forEach((letter) => {
   let span = document.createElement("span");
   span.className = "letter-holder";
@@ -74,14 +80,16 @@ const words = {
   ],
   FootballTeam: [
     "Barcelona",
-    
+    "Bayern Munich",
+    "Atletico Madrid",
     "Liverpool",
     "Milan",
       "Everton",
-    
+    "Inter Milan",
     "Ajax",
+    "Real Madrid",
     "Napoli",
-
+"Manchester United",
     "Sevillia",
     "Arsenal",
   ],
@@ -110,7 +118,7 @@ setTimeout(() => {
     console.log(finalvalue);
   };
 }, 3000);
-
+let cor = 0;
 let wordtobegussed = Array.from(finalvalue);
 
 let lettercontainer = document.querySelector(".guesscont");
@@ -119,10 +127,11 @@ wordtobegussed.forEach((letter) => {
   let emptyspan = document.createElement("span");
   if (letter === " ") {
     emptyspan.className = "space";
+    cor++;
   }
   lettercontainer.appendChild(emptyspan);
 });
-let cor = 0;
+
 let wrongattemp = 0;
 /******************* */
 let thedraw = document.querySelector(".all");
