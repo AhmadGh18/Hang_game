@@ -1,6 +1,6 @@
 let lettercont = document.querySelector(".letters");
 let letters = "abcdefghijklmnopqrstuvwxyz";
-
+let pressrox = document.querySelector(".x");
 let lett = Array.from(letters);
 let sorry = document.querySelector(".sorry");
 pressrox.onclick = () => {
